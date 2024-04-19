@@ -1,38 +1,122 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --clr-common-white: #FFFFFF;
+  --clr-common-black: #202020;
+  --clr-common-primary: #28E98C;
+  --clr-common-gray: #333333;
+  --clr-common-border: #525252;
+  --clr-body-heading: #1B2A52;
+  --clr-body-text: #6A738B;
+  --clr-color-violet: #E825EC;
+  --clr-theme-primary: #7D25EC;
+  --clr-bg-gray: #F6F6F6;
+  --clr-bg-gray-2: #F1F1F1;
+  --clr-bg-gray-3: #EEEEEE;
+}
+
+body{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--clr-body-text);
+  font-size: 16px;
+  line-height: 26px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--clr-body-heading);
+}
+
+h1 {
+  font-size: 60px;
+  margin-top: 120px;
+  margin-bottom: 50px
+}
+
+
+
+.header {
+  background-image: url('./images/bg.jpg');
   text-align: center;
+  min-height: 500px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  width: 1040px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.btnwrap {
+  padding: 80px;
+}
+
+.fileInput {
+  display: none; /* Hide the default file input */
+}
+
+.fileInputLabel {
+  padding: 10px 20px;
+  background: linear-gradient(180deg, #28E98C 0%, #15D278 100%);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn {
+	padding: 10px 20px;
+  background: linear-gradient(180deg,#CCB4FF ,#c797eb 75%);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.fileInputLabel:hover {
+  background-color: #0056b3;
+}
+
+.boxes {
+  overflow: hidden;
+}
+
+.box1, .box2 {
+  width: 400px;
+  margin: 50px 0;
+  border-radius: 5px;
+  border: 1px solid #D4FBE8;
+  padding: 20px 30px;
+  float: left;
+
+  box-shadow: rgba(40, 233, 140, 0.4) 5px 5px, 
+              rgba(40, 233, 140, 0.2) 10px 10px, 
+              rgba(40, 233, 140, 0.1) 15px 15px, 
+              rgba(40, 233, 140, 0.05) 20px 20px, 
+              rgba(40, 233, 140, 0.02) 25px 25px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .box2 {
+    margin-left: 100px;
   }
-  to {
-    transform: rotate(360deg);
+
+.original {
+    padding: 30px;
+    box-shadow: rgba(206,164,238, 0.4) 0px 0px 8px;
+    margin: 30px 10px;
   }
-}
+
+  
